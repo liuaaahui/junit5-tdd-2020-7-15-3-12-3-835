@@ -1,6 +1,5 @@
 package junit5.tdd;
 
-import javafx.scene.media.AudioClip;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 
@@ -43,6 +42,7 @@ public class FizzBuzzTest {
         //then
         Assertions.assertEquals("Buzz",actual);
     }
+
     @Test
     void should_return_whizz_when_play_fizz_buzz_given_7() {
         //given
@@ -53,5 +53,17 @@ public class FizzBuzzTest {
 
         //then
         Assertions.assertEquals("Whizz",actual);
+    }
+
+    @Test
+    void should_return_fizzbuzzwhizz_when_play_fizz_buzz_given_105() {
+        //given
+        int number = 105;
+        FizzBuzz fuzzBuzz = new FizzBuzz();
+        //when
+        String actual = fuzzBuzz.play(number);
+
+        //then
+        Assertions.assertEquals("FizzBuzzWhizz",actual);
     }
 }

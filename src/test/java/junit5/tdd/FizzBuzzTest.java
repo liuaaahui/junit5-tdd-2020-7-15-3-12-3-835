@@ -14,7 +14,7 @@ public class FizzBuzzTest {
 
         String actual = fizzBuzz.play(number);
         //then
-        
+
         Assertions.assertEquals("1",actual);
     }
 
@@ -42,5 +42,16 @@ public class FizzBuzzTest {
 
         //then
         Assertions.assertEquals("Buzz",actual);
+    }
+    @Test
+    void should_return_whizz_when_play_fizz_buzz_given_7() {
+        //given
+        int number = 7;
+        FizzBuzz fuzzBuzz = new FizzBuzz();
+        //when
+        String actual = fuzzBuzz.play(number);
+
+        //then
+        Assertions.assertEquals("Whizz",actual);
     }
 }

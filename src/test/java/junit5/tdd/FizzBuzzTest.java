@@ -31,4 +31,5 @@ public class FizzBuzzTest {
 
         Assertions.assertEquals("Fizz",actual);
     }
+
 }
